@@ -526,7 +526,7 @@ li {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 12;
+  z-index: 10;
 }
 .hero-section .hero-content {
   display: flex;
@@ -536,7 +536,7 @@ li {
   gap: 32px;
   text-align: center;
   position: relative;
-  z-index: 20;
+  z-index: 15;
 }
 .hero-section .hero-content p:first-child {
   font-size: 18px;
