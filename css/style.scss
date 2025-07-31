@@ -100,11 +100,7 @@ $medias:(
     padding: 0.7rem 0;
     width: 100%;
     position: fixed;
-<<<<<<< HEAD
     z-index: 25;
-=======
-    z-index: 1;
->>>>>>> 5150ce327f50cbb151b74b97202b0499c290fcff
     transition:  background-color 0.3s ease;
     &.scrolled{
         background-color: var(--color-background);
