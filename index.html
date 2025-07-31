@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./imgs/logo.svg">
+        <title>Teradevelopers Software House &amp; Learning Community</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <button class="menu col-auto" onclick="toggleNavbar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
+                    </button>
+
+                    <div class="col-auto">
+                        <a href="./index.html">
+                            <img src="./imgs/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+
+                    <nav class="col-auto navBar">
+                        <ul class="d-flex links" id="navLinks">
+                            <li>
+                                <a href="./index.html" class="active">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="./serivce.html">Services</a>
+                            </li>
+
+                            <li>
+                                <a href="./courses.html">Courses</a>
+                            </li>
+
+                            <li>
+                                <a href="./workshop.html">Workshops</a>
+                            </li>
+
+                            <li>
+                                <a href="./events.html">Events</a>
+                            </li>
+
+                            <li>
+                                <a href="./contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="col-auto">
+                        <div class="d-flex">
+                            <span class="user">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                    <path d="M11.2423 10.9448C12.9129 10.9448 14.2673 9.59044 14.2673 7.91978C14.2673 6.24911 12.9129 4.89478 11.2423 4.89478C9.57162 4.89478 8.21729 6.24911 8.21729 7.91978C8.21729 9.59044 9.57162 10.9448 11.2423 10.9448Z" stroke="white" stroke-width="1.65"/>
+                                    <path d="M5.93138 16.8198L5.45068 17.6844C5.39613 17.7828 5.36821 17.8938 5.36968 18.0063C5.37115 18.1188 5.40196 18.229 5.45906 18.326C5.51616 18.423 5.59758 18.5034 5.69527 18.5593C5.79296 18.6152 5.90354 18.6446 6.01608 18.6447H16.4683C16.5808 18.6446 16.6914 18.6152 16.7891 18.5593C16.8868 18.5034 16.9682 18.423 17.0253 18.326C17.0824 18.229 17.1132 18.1188 17.1147 18.0063C17.1162 17.8938 17.0882 17.7828 17.0337 17.6844L16.553 16.8198C16.0268 15.8726 15.257 15.0835 14.3232 14.534C13.3894 13.9846 12.3256 13.6948 11.2422 13.6948C10.1587 13.6948 9.09499 13.9846 8.1612 14.534C7.22741 15.0835 6.45754 15.8726 5.93138 16.8198Z" stroke="white" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div class="dropdown">
+                                    <h4>Account</h4>
+                                    <a href="" class="sign">Sign Up</a>
+                                    <div class="d-flex order-profile">
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"/></svg>
+                                            Orders</a>
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
+                                            Profile</a>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                    <path d="M9.94174 4.03564H12.508C13.1878 4.03564 13.8401 4.30734 14.3219 4.79024C14.8036 5.27498 15.0737 5.93071 15.0732 6.61404V8.33224H7.37654V6.61404C7.37654 5.92984 7.64714 5.27424 8.12784 4.79024C8.36584 4.55122 8.64867 4.36153 8.96013 4.23203C9.27159 4.10254 9.60554 4.03581 9.94284 4.03564M3.97314 8.33224H18.5107V17.1498C18.5107 17.7735 18.2643 18.373 17.8243 18.8141C17.3843 19.2563 16.7892 19.5038 16.1677 19.5038H6.31614C6.00824 19.5034 5.70345 19.4422 5.4192 19.3239C5.13495 19.2055 4.87681 19.0323 4.65954 18.8141C4.22028 18.3716 3.97359 17.7734 3.97314 17.1498V8.33224Z" stroke="white" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                       
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero-section">
+            <div class="container">
+                <div class="overlay"></div>
+                <div class="hero-content">
+                    <p>Software House & Learning Community</p>
+                    <h1>Building Digital Solutions & Growing Talents</h1>
+                    <p>We craft E-Commerce and SaaS solutions that help businesses grow, while empowering learners through our vibrant community of courses, workshops, and events.</p>
+
+                    <div class="d-flex">
+                        <a href="">
+                            Start Your Project
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M7.24218 14.3647C6.20141 14.9523 5.35984 15.8373 4.82534 16.9063C4.29084 17.9753 4.08778 19.1795 4.24218 20.3647C5.42734 20.5191 6.63161 20.316 7.7006 19.7815C8.7696 19.247 9.65461 18.4055 10.2422 17.3647M4.24219 13.3647C6.02528 13.5766 7.68524 14.3822 8.95495 15.6519C10.2247 16.9217 11.0303 18.5816 11.2422 20.3647C12.1261 19.8551 12.8655 19.1285 13.3904 18.2536C13.9154 17.3787 14.2085 16.3844 14.2422 15.3647C15.9213 14.774 17.3876 13.6987 18.4555 12.2747C19.5235 10.8507 20.1453 9.14209 20.2422 7.36475C20.2422 6.5691 19.9261 5.80604 19.3635 5.24343C18.8009 4.68082 18.0378 4.36475 17.2422 4.36475C15.4649 4.46166 13.7562 5.08342 12.3322 6.1514C10.9082 7.21939 9.83288 8.68564 9.24219 10.3647C8.22245 10.3984 7.22815 10.6915 6.35325 11.2165C5.47836 11.7414 4.75178 12.4808 4.24219 13.3647ZM14.2422 9.36475C14.2422 9.62997 14.3476 9.88432 14.5351 10.0719C14.7226 10.2594 14.977 10.3647 15.2422 10.3647C15.5074 10.3647 15.7618 10.2594 15.9493 10.0719C16.1368 9.88432 16.2422 9.62997 16.2422 9.36475C16.2422 9.09953 16.1368 8.84518 15.9493 8.65764C15.7618 8.47011 15.5074 8.36475 15.2422 8.36475C14.977 8.36475 14.7226 8.47011 14.5351 8.65764C14.3476 8.84518 14.2422 9.09953 14.2422 9.36475Z" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                    
+                        </a>
+
+                        <a href="">
+                            Join Community
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M8.24219 21.3647V20.3647C8.24219 19.8343 8.4529 19.3256 8.82798 18.9505C9.20305 18.5754 9.71176 18.3647 10.2422 18.3647H14.2422C14.7726 18.3647 15.2813 18.5754 15.6564 18.9505C16.0315 19.3256 16.2422 19.8343 16.2422 20.3647V21.3647M17.2422 10.3647H19.2422C19.7726 10.3647 20.2813 10.5754 20.6564 10.9505C21.0315 11.3256 21.2422 11.8343 21.2422 12.3647V13.3647M3.24219 13.3647V12.3647C3.24219 11.8343 3.4529 11.3256 3.82798 10.9505C4.20305 10.5754 4.71176 10.3647 5.24219 10.3647H7.24219M10.2422 13.3647C10.2422 13.8951 10.4529 14.4038 10.828 14.7789C11.2031 15.154 11.7118 15.3647 12.2422 15.3647C12.7726 15.3647 13.2813 15.154 13.6564 14.7789C14.0315 14.4038 14.2422 13.8951 14.2422 13.3647C14.2422 12.8343 14.0315 12.3256 13.6564 11.9505C13.2813 11.5754 12.7726 11.3647 12.2422 11.3647C11.7118 11.3647 11.2031 11.5754 10.828 11.9505C10.4529 12.3256 10.2422 12.8343 10.2422 13.3647ZM15.2422 5.36475C15.2422 5.89518 15.4529 6.40389 15.828 6.77896C16.2031 7.15404 16.7118 7.36475 17.2422 7.36475C17.7726 7.36475 18.2813 7.15404 18.6564 6.77896C19.0315 6.40389 19.2422 5.89518 19.2422 5.36475C19.2422 4.83432 19.0315 4.32561 18.6564 3.95054C18.2813 3.57546 17.7726 3.36475 17.2422 3.36475C16.7118 3.36475 16.2031 3.57546 15.828 3.95054C15.4529 4.32561 15.2422 4.83432 15.2422 5.36475ZM5.24219 5.36475C5.24219 5.89518 5.4529 6.40389 5.82798 6.77896C6.20305 7.15404 6.71176 7.36475 7.24219 7.36475C7.77262 7.36475 8.28133 7.15404 8.6564 6.77896C9.03148 6.40389 9.24219 5.89518 9.24219 5.36475C9.24219 4.83432 9.03148 4.32561 8.6564 3.95054C8.28133 3.57546 7.77262 3.36475 7.24219 3.36475C6.71176 3.36475 6.20305 3.57546 5.82798 3.95054C5.4529 4.32561 5.24219 4.83432 5.24219 5.36475Z" stroke="#131313" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="container">
+                <div class="serivce-info">
+                    <div class="serivce-heading">
+                        <p>Explore</p>
+                        <h2>Our Services</h2>
+                        <p>Discover our specialized services designed to empower your business in the world of technology.</p>
+                    </div>
+
+                    <div class="tracks d-flex">
+                        <div class="d-flex">
+                            <div class="icon-service">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                    <path d="M22.8408 25.9721L31.2383 17.5746L22.8408 9.17712" stroke="#CE9E4A" stroke-width="2.79917" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.6441 9.17712L3.24658 17.5746L11.6441 25.9721" stroke="#CE9E4A" stroke-width="2.79917" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="tracks-info">
+                                <h3>Front-end Development</h3>
+                                <p>Build fast, accessible websites with modern front-end tools like React and Angular.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="icon-service">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                    <path d="M17.2422 27.3718L27.0393 17.5747L31.238 21.7735L21.4409 31.5705L17.2422 27.3718Z" stroke="#CE9E4A" stroke-width="2.79917" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25.6399 18.9743L23.5405 8.4774L3.24658 3.57886L8.14512 23.8728L18.642 25.9722L25.6399 18.9743Z" stroke="#CE9E4A" stroke-width="2.79917" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.24658 3.57886L13.8638 14.1961" stroke="#CE9E4A" stroke-width="2.79917" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.8429 18.9748C17.3891 18.9748 18.6424 17.7214 18.6424 16.1753C18.6424 14.6292 17.3891 13.3759 15.8429 13.3759C14.2968 13.3759 13.0435 14.6292 13.0435 16.1753C13.0435 17.7214 14.2968 18.9748 15.8429 18.9748Z" stroke="#CE9E4A" stroke-width="2.79917" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="tracks-info">
+                                <h3>UI/UX Design</h3>
+                                <p>Craft user-friendly, beautiful interfaces that reflect your brand’s identity.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="icon-service">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                    <path d="M29.2648 19.5481L19.2298 29.5831C18.9699 29.8434 18.6611 30.0498 18.3213 30.1907C17.9815 30.3316 17.6173 30.4041 17.2494 30.4041C16.8816 30.4041 16.5173 30.3316 16.1775 30.1907C15.8377 30.0498 15.529 29.8434 15.269 29.5831L3.24658 17.5747V3.57886H17.2424L29.2648 15.6013C29.7862 16.1257 30.0788 16.8352 30.0788 17.5747C30.0788 18.3142 29.7862 19.0236 29.2648 19.5481Z" stroke="#CE9E4A" stroke-width="2.79917" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.2441 10.5768H10.2581" stroke="#CE9E4A" stroke-width="2.79917" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="tracks-info">
+                                <h3>Shopify Development</h3>
+                                <p>Develop custom Shopify stores and apps to grow your e-commerce business.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="">
+                        Let’s Build Together
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                            <path d="M15.2422 7.80469H1.24219M15.2422 7.80469L9.24219 13.8047M15.2422 7.80469L9.24219 1.80469" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-section">
+            <div class="container">
+                <h2 class="t-center">Technology Partners</h2>
+
+                <div class="logo-slider">
+                    <div class="logo-track">
+                    <img src="./imgs/angular.svg.png" alt="Logo 1">
+                    <img src="./imgs/Magento_Logo.svg.png" alt="Logo 2">
+                    <img src="./imgs/shopify-2.svg.png" alt="Logo 3">
+                    <img src="./imgs/figma.svg.png" alt="Logo 4">
+                    <img src="./imgs/digitalocean-2.svg.png" alt="Logo 5">
+                    <img src="./imgs/angular.svg.png" alt="Logo 1">
+                    <img src="./imgs/Magento_Logo.svg.png" alt="Logo 2">
+                    <img src="./imgs/shopify-2.svg.png" alt="Logo 3">
+                    <img src="./imgs/figma.svg.png" alt="Logo 4">
+                    <img src="./imgs/digitalocean-2.svg.png" alt="Logo 5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trusted-section">
+            <div class="container">
+                <div class="trusted-info">
+                    <h2>Trusted By</h2>
+                    <p>Join the growing list of businesses and entrepreneurs who trust us to bring their digital visions to life.</p>
+
+                    <ul class="d-flex">
+                        <li>
+                            <a href="https://www.al-kadi.sa/">
+                                <img src="./imgs/B-logo-wite-_-1.webp.png" alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://moharykat.sa/">
+                                <img src="./imgs/moharykat.png.png" alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.raneen.com/">
+                                <img src="./imgs/raneen.svg.png" alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.zatcare.com/">
+                                <img src="./imgs/zat.png.png" alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://zumurudat.com/ar/home">
+                                <img src="./imgs/zumurudat.svg.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p>From early-stage startups to established businesses, we help our clients build scalable, high-quality solutions they can trust.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-xl-6 col-md-12">
+                        <div class="features-item">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                                    <path d="M23.4321 11.764C16.8059 12.0744 10.3751 16.1341 3.38896 23.4417C2.95987 23.8905 2.95987 24.5984 3.38896 25.0472C10.3751 32.355 16.8059 36.4148 23.4321 36.7254C30.0316 37.0345 37.2158 33.6378 45.7478 25.0604C46.1963 24.6094 46.1963 23.8802 45.7478 23.4291C37.2158 14.8518 30.0316 11.4549 23.4321 11.764ZM23.3159 9.26672C30.9407 8.90957 38.7714 12.877 47.511 21.663C48.9306 23.09 48.9306 25.3995 47.511 26.8266C38.7714 35.6125 30.9407 39.5799 23.3159 39.2226C15.7177 38.8664 8.71456 34.2294 1.591 26.7778C0.237243 25.3618 0.237243 23.1271 1.59101 21.711C8.71456 14.2597 15.7177 9.62261 23.3159 9.26672Z" fill="white"/>
+                                    <path d="M33.1694 24.2451C33.1694 28.9825 29.3138 32.7853 24.6045 32.7853C19.8952 32.7853 16.0396 28.9825 16.0396 24.2451C16.0396 19.5074 19.8952 15.7048 24.6045 15.7048C29.3138 15.7048 33.1694 19.5074 33.1694 24.2451ZM24.6045 30.2852C27.9587 30.2852 30.6779 27.5809 30.6779 24.2451C30.6779 20.9091 27.9587 18.2048 24.6045 18.2048C21.2502 18.2048 18.531 20.9091 18.531 24.2451C18.531 27.5809 21.2502 30.2852 24.6045 30.2852Z" fill="white"/>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3>Intentional design</h3>
+                                <p>Everything we do starts with why</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-xl-6 col-md-12">
+                        <div class="features-item">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2422 12.819L20.6779 9.30204C16.5621 5.24081 9.88887 5.24081 5.77301 9.30204C1.65714 13.3633 1.65714 19.9479 5.77301 24.0091L24.2422 42.2331L42.7114 24.0091C46.8271 19.9479 46.8271 13.3633 42.7114 9.30204C38.5954 5.24081 31.9222 5.24081 27.8064 9.30204L24.2422 12.819ZM26.0782 7.59687C31.1487 2.59389 39.3692 2.59389 44.4394 7.59687C49.5099 12.5998 49.5099 20.7113 44.4394 25.7144L25.9702 43.9383C25.0159 44.8801 23.4685 44.8801 22.5141 43.9383L4.04489 25.7144C-1.02538 20.7113 -1.02538 12.5999 4.04489 7.59687C9.11518 2.5939 17.3358 2.59389 22.4061 7.59687L24.2422 9.4086L26.0782 7.59687Z" fill="white"/>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3>Made with care</h3>
+                                <p>We believe in building better</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-xl-6 col-md-12">
+                        <div class="features-item">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.9091 29.1385H18.9091C11.6189 29.1385 5.70908 35.1608 5.70908 42.5895V44.599H44.1091V42.5895C44.1091 35.1608 38.1993 29.1385 30.9091 29.1385ZM18.9091 26.6929C10.2934 26.6929 3.30908 33.8101 3.30908 42.5895V47.0446H46.5091V42.5895C46.5091 33.8101 39.5248 26.6929 30.9091 26.6929H18.9091Z" fill="white"/>
+                                    <path d="M35.3721 12.45C35.3721 18.5281 30.5365 23.4554 24.572 23.4554C18.6073 23.4554 13.772 18.5281 13.772 12.45C13.772 6.37191 18.6073 1.44464 24.572 1.44464C30.5365 1.44464 35.3721 6.37191 35.3721 12.45ZM24.572 21.0097C29.2113 21.0097 32.9721 17.1774 32.9721 12.45C32.9721 7.72258 29.2113 3.89026 24.572 3.89026C19.9328 3.89026 16.172 7.72258 16.172 12.45C16.172 17.1774 19.9328 21.0097 24.572 21.0097Z" fill="white"/>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3>A team with a goal</h3>
+                                <p>Real people making great products</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p>Join Now</p>
+                    <h2>Our Learning Community</h2>
+                    <p>Grow your skills, connect with like-minded learners, and join a community that supports your journey.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 col-lg-12">
+                        <a href="./events.html" class="card">
+                            <div>
+                                <img src="./imgs/Events.png" alt="">
+                            </div>
+
+                            <h3>Events</h3>
+                            <p>Join our tech events, webinars, and hackathons to learn from experts, connec with like-minded learners, and stay updated with industry trends.</p>
+                            <span class="enrol">Upcoming Events
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                    <path d="M15.2422 7.0246H1.24219M15.2422 7.0246L9.24219 13.0246M15.2422 7.0246L9.24219 1.0246" stroke="#CE9E4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-12">
+                        <a href="./courses.html" class="card">
+                            <div>
+                                <img src="./imgs/Interactive Courses.png" alt="">
+                            </div>
+
+                            <h3>Interactive Courses</h3>
+                            <p>Our structured, step-by-step interactive courses help you learn coding, design, and tech from scratch to advanced levels. Study at your own pace with practical projects, clear explanations, and mentorship to support your growth.</p>
+                            <span class="enrol">Upcoming Courses
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                    <path d="M15.2422 7.0246H1.24219M15.2422 7.0246L9.24219 13.0246M15.2422 7.0246L9.24219 1.0246" stroke="#CE9E4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-3 col-lg-12">
+                        <a href="./workshop.html" class="card">
+                            <div>
+                                <img src="./imgs/Workshops.png" alt="">
+                            </div>
+
+                            <h3>Workshops</h3>
+                            <p>Our workshops are beginner-friendly, project-based, and guided by industry professionals to help you apply what you learn immediately.</p>
+                            <span class="enrol">See Workshops
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                    <path d="M15.2422 7.0246H1.24219M15.2422 7.0246L9.24219 13.0246M15.2422 7.0246L9.24219 1.0246" stroke="#CE9E4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reads-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Explore Our Top Reads</h2>
+                    <p>Discover insights, practical tips, and in-depth articles to level up your tech journey. Stay updated with our most loved reads on design, development and everything in between to help you grow and build better.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 col-xl-6 col-md-12">
+                        <a href="https://teradevelopers.com/blogs/featured-posts/turning-visitors-into-loyal-users" class="reads-item">
+                            <div>
+                                <img src="./imgs/Turning Visitors Into Loyal Users.png" alt="">
+                            </div>
+
+                            <h3>Turning Visitors Into Loyal Users</h3>
+                            <p>A fast website isn’t just a nice-to-have; it’s essential for retaining visitors and turning them ...</p>
+                            <span class="enrol">Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                    <path d="M15.2422 7.0246H1.24219M15.2422 7.0246L9.24219 13.0246M15.2422 7.0246L9.24219 1.0246" stroke="#CE9E4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-3 col-xl-6 col-md-12">
+                        <a href="https://teradevelopers.com/blogs/featured-posts/speed-is-your-silent-salesperson" class="reads-item">
+                            <div>
+                                <img src="./imgs/Speed Is Your Silent Salesperson.png" alt="">
+                            </div>
+
+                            <h3>Speed Is Your Silent Salesperson</h3>
+                            <p>A fast website isn’t just a nice-to-have; it’s essential for retaining visitors and turning them ...</p>
+                            <span class="enrol">Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                    <path d="M15.2422 7.0246H1.24219M15.2422 7.0246L9.24219 13.0246M15.2422 7.0246L9.24219 1.0246" stroke="#CE9E4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-3 col-xl-6 col-md-12">
+                        <a href="https://teradevelopers.com/blogs/featured-posts/why-touch-typing" class="reads-item">
+                            <div>
+                                <img src="./imgs/Why Touch Typing_.png" alt="">
+                            </div>
+
+                            <h3>Why Touch Typing?</h3>
+                            <p>Learn to type faster without looking at your keyboard! Touch Typing helps you type quickly, accur...</p>
+                            <span class="enrol">Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                    <path d="M15.2422 7.0246H1.24219M15.2422 7.0246L9.24219 13.0246M15.2422 7.0246L9.24219 1.0246" stroke="#CE9E4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-3 col-xl-6 col-md-12">
+                        <a href="https://teradevelopers.com/blogs/featured-posts/clickable-card-interface" class="reads-item">
+                            <div>
+                                <img src="./imgs/Clickable Card Interface.png" alt="">
+                            </div>
+
+                            <h3>Clickable Card Interface</h3>
+                            <p>Learn how to design a fully clickable card without harming accessibility or SEO. Discover why wra...</p>
+                            <span class="enrol">Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                    <path d="M15.2422 7.0246H1.24219M15.2422 7.0246L9.24219 13.0246M15.2422 7.0246L9.24219 1.0246" stroke="#CE9E4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="questions-section">
+            <div class="container">
+                <div class="accordion-item d-flex">
+                    <h2>Have Questions? <br> We’ve Got You Covered.</h2>
+                    <p>Find clear answers about our services, process, and community <br>benefits to help you take the next step with Teradevelopers.</p>
+                    <button class="accordion">What services does Teradevelopers offer?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="21" viewBox="0 0 15 21" fill="none">
+                            <path d="M11.3302 9.35864L7.44731 13.2415L3.56445 9.35864" stroke="#E3E3E3" stroke-width="1.45607" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="panel">
+                        <p>We are a software house specializing in <strong>custom website and e-commerce (E-Commerce)</strong> development and SaaS solutions. We also provide professional UI/UX design, and we offer post-launch support and maintenance to ensure your project’s stability and business growth.</p>
+                    </div>
+
+                    <button class="accordion">How can I start working with Teradevelopers?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="21" viewBox="0 0 15 21" fill="none">
+                            <path d="M11.3302 9.35864L7.44731 13.2415L3.56445 9.35864" stroke="#E3E3E3" stroke-width="1.45607" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="panel">
+                        <p>You can book a <strong>free consultation call</strong> to discuss your project and learn how we can help turn your idea into a real product. We will then send you a clear quotation and timeline outlining each project phase.</p>
+                    </div>
+
+                    <button class="accordion">Do you offer maintenance and support after delivery?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="21" viewBox="0 0 15 21" fill="none">
+                            <path d="M11.3302 9.35864L7.44731 13.2415L3.56445 9.35864" stroke="#E3E3E3" stroke-width="1.45607" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="panel">
+                        <p>Yes, we provide <strong>monthly maintenance</strong> plans to ensure your website or store runs smoothly, quickly resolving any technical issues, applying security updates, and making continuous improvements for optimal performance.</p>
+                    </div>
+
+                    <button class="accordion">Why are some courses free at Teradevelopers?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="21" viewBox="0 0 15 21" fill="none">
+                            <path d="M11.3302 9.35864L7.44731 13.2415L3.56445 9.35864" stroke="#E3E3E3" stroke-width="1.45607" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="panel">
+                        <p>Our mission is not just business growth but also <strong>empowering youth to learn programming and design</strong> to enter the job market confidently. This is why we offer free courses regularly alongside paid programs to support our tech community.</p>
+                    </div>
+
+                    <button class="accordion">What will I gain from joining the Teradevelopers Community?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="21" viewBox="0 0 15 21" fill="none">
+                            <path d="M11.3302 9.35864L7.44731 13.2415L3.56445 9.35864" stroke="#E3E3E3" stroke-width="1.45607" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <p>Access to <strong>free workshops and tech challenges</strong> to sharpen your skills.</p>
+                            </li>
+
+                            <li>
+                                <p>Connect with professional developers and designers for practical guidance.</p>
+                            </li>
+
+                            <li>
+                                <p>Opportunities for exclusive internships and job openings within the community.</p>
+                            </li>
+
+                            <li>
+                                <p>Join <strong>code and design review sessions</strong> to get constructive feedback on your projects.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion border">Do I need to be an advanced developer to join the community?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="21" viewBox="0 0 15 21" fill="none">
+                            <path d="M11.3302 9.35864L7.44731 13.2415L3.56445 9.35864" stroke="#E3E3E3" stroke-width="1.45607" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="panel">
+                        <p>No, the Teradevelopers Community is open to both beginners and professionals, providing clear, structured learning paths to help you start your journey in coding or design step-by-step.</p>
+                    </div>
+
+                    <a href="https://teradevelopers.com/collections/services">Get Started With Us
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15">
+                            <path d="M15.2422 7.31445H1.24219M15.2422 7.31445L9.24219 13.3145M15.2422 7.31445L9.24219 1.31445" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="d-flex ">
+                            <a href="./index.html">
+                                <img src="./imgs/logo.svg" alt="">
+                            </a>
+
+                            <p>Our passion is mastery. We craft learning experiences that empower you to build and create for a lifetime.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-auto d-flex">
+                        <h5>Our Software House</h5>
+
+                        <ul>
+                            <li>
+                                <a href="./serivce.html">Services</a>
+                            </li>
+
+                            <li>
+                                <a href="./serivce.html">Projects</a>
+                            </li>
+
+                            <li>
+                                <a href="./serivce.html">Book a Free Call</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-auto d-flex">
+                        <h5>Our Community</h5>
+
+                        <ul>
+                            <li>
+                                <a href="./courses.html">Courses</a>
+                            </li>
+
+                            <li>
+                                <a href="./workshop.html">Workshops</a>
+                            </li>
+
+                            <li>
+                                <a href="./events.html">Events</a>
+                            </li>
+
+                            <li>
+                                <a href="https://teradevelopers.com/blogs/featured-posts">Blog Posts</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-auto d-flex">
+                        <h5>Our Courses</h5>
+
+                        <ul>
+                            <li>
+                                <a href="./courses.html">Front-end Development Diploma</a>
+                            </li>
+
+                            <li>
+                                <a href="./courses.html">UI/UX Design Course</a>
+                            </li>
+
+                            <li>
+                                <a href="./courses.html">Javascript Professional Course</a>
+                            </li>
+
+                            <li>
+                                <a href="./courses.html">UI Developer Course</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-flex">
+                        <p>© 2025 <a href="./index.html">Teradevelopers</a>, All Rights Reserved.</p>
+                        <a href="https://teradevelopers.com/policies/privacy-policy">Privacy policy</a>
+                    </div>
+
+                    <ul class="d-flex">
+                        <li>
+                            <a href="https://www.linkedin.com/company/teradevelopers">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0515 2.65454H4.68951C3.90687 2.65454 3.24219 3.27351 3.24219 4.03603V20.4721C3.24219 21.2356 3.6783 21.8545 4.46093 21.8545H20.823C21.6065 21.8545 22.4422 21.2356 22.4422 20.4721V4.03603C22.4422 3.27351 21.8351 2.65454 21.0515 2.65454ZM10.5565 9.96883H13.1411V11.2863H13.1695C13.5635 10.5759 14.7274 9.85454 16.1665 9.85454C18.9286 9.85454 19.6993 11.3211 19.6993 14.0374V19.1117H16.9565V14.5375C16.9565 13.3215 16.471 12.2545 15.3354 12.2545C13.9567 12.2545 13.2994 13.188 13.2994 14.7204V19.1117H10.5565V9.96883ZM5.98504 19.1117H8.7279V9.96883H5.98504V19.1117ZM9.07076 6.76883C9.07076 7.71602 8.30367 8.48311 7.35647 8.48311C6.40928 8.48311 5.64219 7.71602 5.64219 6.76883C5.64219 5.82163 6.40928 5.05454 7.35647 5.05454C8.30367 5.05454 9.07076 5.82163 9.07076 6.76883Z" fill="#DADADA"/>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.facebook.com/people/Teradevelopers/61577693764820/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                    <path d="M21.6424 12.3133C21.6424 6.97814 17.3452 2.65454 12.0424 2.65454C6.73958 2.65454 2.44238 6.97814 2.44238 12.3133C2.44238 17.1349 5.95238 21.1297 10.5424 21.8545V15.1057H8.10518V12.3121H10.5412V10.1845C10.5412 7.76414 11.9752 6.42614 14.1688 6.42614C15.2176 6.42614 16.3168 6.61574 16.3168 6.61574V8.99174H15.106C13.9132 8.99174 13.5424 9.73694 13.5424 10.5013V12.3133H16.2052L15.7792 15.1045H13.5424V21.8545C18.1324 21.1297 21.6424 17.1349 21.6424 12.3133Z" fill="#DADADA"/>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.whatsapp.com/channel/0029Van1fBdDzgTLSMY47k1J">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                    <path d="M21.7503 11.8222C21.6607 9.37014 20.6275 7.04749 18.8661 5.33921C17.1047 3.63092 14.7515 2.66909 12.2979 2.65454H12.2516C10.5993 2.65332 8.97514 3.08231 7.5389 3.89929C6.10269 4.71628 4.90393 5.8931 4.06057 7.31399C3.21721 8.73487 2.75831 10.3509 2.72903 12.0029C2.69975 13.6549 3.10111 15.2862 3.8936 16.7361L3.0521 21.7715C3.05073 21.7818 3.05157 21.7924 3.05458 21.8023C3.05758 21.8123 3.06268 21.8215 3.06953 21.8293C3.07637 21.8373 3.08482 21.8435 3.09429 21.8479C3.10377 21.8523 3.11405 21.8544 3.12447 21.8545H3.13895L8.1194 20.7467C9.40624 21.3645 10.8154 21.6851 12.2429 21.6847C12.3337 21.6847 12.4244 21.6847 12.5151 21.6847C13.7707 21.6489 15.0069 21.3647 16.1521 20.8486C17.2973 20.3325 18.3291 19.5947 19.1877 18.6778C20.0463 17.7609 20.7148 16.683 21.1546 15.5063C21.5944 14.3296 21.7969 13.0775 21.7503 11.8222ZM12.4677 20.0297C12.3925 20.0297 12.3172 20.0297 12.2429 20.0297C10.9813 20.0313 9.73783 19.7293 8.61735 19.1496L8.36259 19.0164L4.98503 19.8144L5.60842 16.3973L5.46368 16.1523C4.77232 14.9735 4.39993 13.635 4.3832 12.2686C4.36646 10.9022 4.70595 9.55492 5.36822 8.35962C6.03051 7.1643 6.99273 6.16212 8.16013 5.45177C9.32752 4.74143 10.6598 4.34743 12.0258 4.30859C12.1017 4.30859 12.1779 4.30859 12.2545 4.30859C14.3169 4.3147 16.2943 5.13076 17.7608 6.58092C19.2272 8.0311 20.0653 9.99932 20.0943 12.0615C20.1235 14.1237 19.3413 16.1147 17.9164 17.6057C16.4914 19.0967 14.5378 19.9683 12.4765 20.0326L12.4677 20.0297Z" fill="#DADADA"/>
+                                    <path d="M8.93461 7.57613C8.81704 7.57843 8.70112 7.60429 8.5937 7.65219C8.48629 7.70009 8.38957 7.76907 8.3093 7.85503C8.08252 8.0876 7.44851 8.6473 7.41184 9.8227C7.37516 10.9981 8.1964 12.1609 8.31122 12.3241C8.42608 12.487 9.88129 15.0261 12.2784 16.0557C13.6874 16.6628 14.305 16.7669 14.7054 16.7669C14.8704 16.7669 14.995 16.7495 15.1252 16.7419C15.5643 16.7149 16.5554 16.2073 16.7715 15.6553C16.9877 15.1033 17.0021 14.6207 16.9452 14.5243C16.8884 14.4278 16.732 14.3583 16.4966 14.2347C16.261 14.1112 15.1059 13.4936 14.8888 13.4067C14.8083 13.3693 14.7216 13.3467 14.6331 13.3402C14.5754 13.3432 14.5193 13.3603 14.4696 13.3899C14.4201 13.4194 14.3784 13.4607 14.3483 13.51C14.1554 13.7503 13.7124 14.2724 13.5638 14.423C13.5314 14.4603 13.4913 14.4904 13.4465 14.5114C13.4016 14.5324 13.3528 14.5437 13.3032 14.5445C13.2119 14.5405 13.1226 14.5165 13.0418 14.4741C12.342 14.177 11.7041 13.7513 11.1609 13.2195C10.6534 12.7193 10.2228 12.1467 9.88321 11.5202C9.75202 11.277 9.88321 11.1515 10.0029 11.0377C10.1226 10.9238 10.2509 10.7665 10.3744 10.6304C10.4758 10.5142 10.5603 10.3842 10.6254 10.2444C10.659 10.1795 10.676 10.1072 10.6748 10.0342C10.6737 9.961 10.6543 9.88939 10.6186 9.82558C10.5617 9.70399 10.1361 8.50834 9.93634 8.02873C9.77423 7.61859 9.5812 7.60509 9.41231 7.59254C9.27336 7.58289 9.11413 7.57807 8.95489 7.57324H8.93461" fill="#DADADA"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer> 
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+
+        <script>
+            window.addEventListener('scroll', function () {
+                const header = document.querySelector('header');
+                if (window.scrollY > 0) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        </script>
+    </body>
+</html>
