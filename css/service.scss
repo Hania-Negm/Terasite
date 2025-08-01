@@ -231,17 +231,15 @@ $medias:(
     }
 }
 
-// Hero Section Events
-.events-hero{
+// Hero Section
+.service-hero-section{
     position: relative;
-    padding: 100px 0;
-    background-image: url("../imgs/events-bk.jpg");
-    background-color: var(--color-black-73);
+    background-color: var(--color-grey-7);
+    padding: 248.42px 0 ;
+    background-image: url("../imgs/service-bk.png");
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    background-size: cover;
     .overlay {
         position: absolute;
         top: 0;
@@ -249,157 +247,127 @@ $medias:(
         height: 100%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.6); 
-        z-index: 12;
+        z-index: 10;
     }
 
-    .events-heading{
-        padding: 64px 0;
+    .hero-content{
+        @include flex;
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
         position: relative;
-        z-index: 20;
+        z-index: 15;
+
         h1{
-            @include fonts-value(48px, 700, var(--white));
-        }
-    
-        p{
-            @include fonts-value(18px, 400, var(--color-grey-89));
-            max-width: 541px;
+            @include fonts-value(72px, 700, var(--white));
+            line-height: 126px;
+            max-width: 964px;
         }
 
-        @media (max-width:315px) {
-            h1{
-                font-size: 30px;
+        p{
+            @include fonts-value(20px, 400, var(--color-grey-89));
+            line-height: 32px;
+            max-width: 659px;
+        }
+
+        a{
+            @include flex;
+            @include fonts-value(16px, 400,var(--color-grey-7));
+            padding: 16px 24px;
+            border-radius: 4px;
+            background: var(--white);
+            box-shadow: 0 0 0 0 #131313 inset;
+            gap: 8px;
+            border: 1px solid var(--white);
+            transition: all linear 0.3s;
+            &:hover{
+                background-color: var(--color-grey-7);
+                color: var(--white);
+                svg{
+                    fill: var(--white);
+                }
             }
+        }
+
+        @media (max-width:372px) {
+            h1{
+                font-size: 45px;
+            }
+        }
+    }
+
+    @media (max-width:424px) {
+        .d-flex{
+            flex-direction: column;
+            row-gap: 20px;
         }
     }
 }
 
-.events-section{
-    padding: 48px 0 100px 0;
-    background-color: var(--color-grey-7,);
-    .list{
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 16px;
-        
-        span{
-            display: block;
-            @include fonts-value(16px, 400, var(--color-grey-89));
-        }
+// Partner Section
+.partner-section{
+    background: linear-gradient(180deg, #050505 0%, #1a1a1a 100%);
+    padding: 100px 0;
 
-        select{
-            border: none;
-            background: transparent;
-            @include fonts-value(16px , 400, var(--color-grey-89));
-
-            option{
-                @include fonts-value(16px , 400, var(--color-grey-89));
-                background-color: var(--color-black-solid);
-                box-shadow: 10px 10px 5px 12px var(--color-grey-7);
-                border-radius: 4px;
-                padding: 8px;
+    .partner-hero-content{
+        @include flex;
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
+        p{
+            &:first-child{
+                @include fonts-value(18px, 600, var(--color-orange-55));
+                line-height: 25.2px
             }
         }
-          
-          
-    }
-
-    .no-events{
-        flex-direction: column;
-        text-align: center;
-        @include flex;
-        gap: 11.18px;
-        padding: 64px 40px;
 
         h2{
-            @include fonts-value(48px , 700, var(--color-grey-89));
+            @include fonts-value(48px, 700, var(--white));
+            line-height: 126px;
+            max-width: 964px;
         }
 
         p{
-            @include fonts-value(16px , 400, var(--color-grey-89));
-            a{
-                text-decoration: underline;
-                color: var(--color-orange-55);
-            }
+            @include fonts-value(20px, 400, var(--color-grey-89));
+            line-height: 32px;
+            max-width: 659px;
         }
     }
-}
-
-// Footer
-footer{
-    padding: 64px 0 20px 0;
-    background: var(--color-black-solid);
 
     .row{
+        row-gap: 24px;
+        padding-top: 48px;
         justify-content: space-between;
-        align-items: stretch;
-        padding-bottom:22.35px;
-        border-bottom: 1px solid var(--color-grey-89);
-        .d-flex{
-            &:first-child{
-                flex-direction: column;
-                gap: 31.3px;
-                padding-bottom: 24px;
-                p{
-                    @include fonts-value(18px, 400,var(--color-grey-85));
-                    max-width: 410px;
-                }
-            }
-        }
+        align-items: stretch; 
 
-        .d-flex{
+        .partner-item{
+            display: flex;
+            align-items: center;
             flex-direction: column;
             gap: 16px;
-            align-items: stretch;
-            height: 100%;
-
-            h5{
-                @include fonts-value(16px, 600, var(--white));
-                padding: 11.2px 0;
-                margin-top: auto;
-            }
-
-           ul{
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-                a{
-                    @include fonts-value(16px, 400, var(--color-grey-85));
-                }
-           }
-        }
-    }
-
-    .row{
-        &:last-child{
-            padding-top: 22.35px;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: none;
-
-            .d-flex{
-                align-items: center;
-                gap: 20px;
-                flex-direction: row;
-                p{
-                    @include fonts-value(12px, 400, var(--color-white-60));
-                    a{
-                        @include fonts-value(12px, 400, var(--color-white-60));
-                    }
-                }
-
-                a{
-                    @include fonts-value(12px, 400, var(--color-white-60));
-                }
-            }
-        }
-    }
-
-    @media (max-width:666px) {
-        .row{
-            @include flex;
-            flex-direction: column;
             text-align: center;
-            row-gap: 16px;
+            height: 100%;
+            flex: 1;
+
+            .icons{
+                border-radius: 8px;
+                background-color: var(--color-white-15);
+                padding: 16px;
+                @include flex;
+            }
+
+            .partner-info{
+                @include flex;
+                flex-direction: column;
+                gap: 4px;
+                .first-para{
+                    @include fonts-value(32px, 600, var(--color-grey-89));
+                }
+
+                p{
+                    @include fonts-value(16px, 400, var(--color-grey-89));
+                }
+            }
         }
     }
 }
