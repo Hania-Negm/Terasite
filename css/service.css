@@ -678,6 +678,8 @@ li {
   flex-direction: column;
   gap: 100px;
   width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .our-servive .container-service .front-end-part {
   justify-content: space-between;
