@@ -568,9 +568,9 @@ li {
 .service-hero-section .hero-content a:hover svg {
   fill: var(--white);
 }
-@media (max-width: 395px) {
+@media (max-width: 903px) {
   .service-hero-section .hero-content h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 @media (max-width: 424px) {
