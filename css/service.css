@@ -906,4 +906,70 @@ li {
   background-color: var(--white);
 }
 
+.bring-section {
+  background: linear-gradient(180deg, #050505 0%, #1a1a1a 100%);
+  padding: 100px 0;
+}
+.bring-section .row {
+  border-radius: 16px;
+  background: var(--color-white-6);
+  padding: 48px;
+  max-width: 1224px;
+  margin: auto;
+  align-items: stretch;
+  min-height: 532px;
+  row-gap: 48px;
+}
+.bring-section .row img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bring-section .row .bring-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15.395px;
+  flex: 1;
+}
+.bring-section .row .bring-info h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-grey-89);
+}
+.bring-section .row .bring-info p:first-child {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-grey-89);
+}
+.bring-section .row .bring-info p a {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-orange-55);
+}
+.bring-section .row .bring-info p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-grey-89);
+  padding-bottom: 12px;
+}
+.bring-section .row .bring-info .free-call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background-color: var(--white);
+  box-shadow: 0 0 0 0 #131313 inset;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-grey-7);
+  max-width: 240px;
+}
+.bring-section .row .bring-info p:last-child {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-grey-89);
+}
+
 /*# sourceMappingURL=service.css.map */
