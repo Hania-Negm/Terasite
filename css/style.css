@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import './colors.css';
 @import './stylesheet.css';
 * {
@@ -1140,6 +1141,24 @@ footer .row:last-child .d-flex a {
     text-align: center;
     row-gap: 16px;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* عرض الشريط */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-grey-7); /* خلفية المسار */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* لون السكرول */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* عند التحويم */
 }
 
 /*# sourceMappingURL=style.css.map */
